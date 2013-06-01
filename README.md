@@ -11,7 +11,7 @@ I have many good ideas for further development which
 will make your life easier as developer or designer. 
 I would be delighted if you flattr fitgrd!
 
-<a href="http://flattr.com/thing/1355012/jayalaifitgrd-on-GitHub" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+<a href="http://flattr.com/thing/1355012/fitgrd-the-sexy-looking-responsive-css-grid" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 
 
 ## What it is
