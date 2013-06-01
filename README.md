@@ -5,6 +5,15 @@ fitgrd
 
 find the working demo here: www.fitgrd.com
 
+## Note
+Fitgrd is a product of much coffee and sleepless nights. 
+I have many good ideas for further development which
+will make your life easier as developer or designer. 
+I would be delighted if you flattr fitgrd!
+
+<a href="http://flattr.com/thing/1355012/jayalaifitgrd-on-GitHub" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+
+
 ## What it is
 .Fitgrd is not a framework. It's a solid foundation to build up your own responsive website. 
 It is designed for rapid prototyping, but also runs well in production environments. 
