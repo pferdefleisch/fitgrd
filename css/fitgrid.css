@@ -10,6 +10,7 @@
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
+	/* remember: box-sizing is not supported by IE7 :( */	
 	outline: none;
 	vertical-align: top;
 }
@@ -17,10 +18,11 @@
 .center {
 	max-width: 80em;
 	margin: 0 auto;
+	position: relative;
 }
 
 .row {
-	margin: .5em;
+	margin: 0 .5em;
 	padding: 2% 1em 0;
 	overflow: hidden;
 	height: 1%;
@@ -42,8 +44,9 @@
    columns w/ margin
    ======================================= */
 .fg1,.fg2,.fg3,.fg4,.fg5,.fg6,.fg7,.fg8,.fg9,.fg10,.fg11,.fg12 {
-	margin:0 2%;
+	margin:0 2% 0;
 	padding:0;
+	/* in case of IE7 it's better not to use a padding because of the box-model issue */
 	float:left;
 	position:relative;
 }
@@ -153,7 +156,7 @@
    ======================================= */
   
 .fg-no-gutter{
-	padding: 0 2.5em;
+	padding: 0 3.5%;
 	margin-top: 0;
 	margin-bottom: 0;
 }  
@@ -163,6 +166,11 @@
 	padding:0;
 	float:left;
 	position:relative;
+}
+
+.fg-no-gutter img{
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .fg-no-gutter .fg12 {
@@ -266,19 +274,24 @@
 }
 
 .fg-no-mobile{
-	display: block;
+	display: block !important;
 }
 
 .fg-no-desktop{
-	display: none;
+	display: none !important;
 }
 
 /* ======================================= 
    media queries
    ======================================= */
-   
+
+/* tablet size */   
+@media screen and (max-width: 48em ) {
+	
+}   
+    
 /* smartphone size */
-@media screen and (max-width: 30em ) {
+@media screen and (max-width: 36.5em ) {
 	
 	.row{
 		padding: 0 1em;
@@ -289,8 +302,7 @@
 		width: 46%;
 		margin-bottom: 1em;
 	}	
-	
-	
+
 	.fg3,.fg4,.fg5,.fg6,.fg7,.fg8,.fg9,.fg10,.fg11,.fg12 {
 		margin:0 2% 1em;
 		padding:0;
@@ -302,29 +314,13 @@
 	}
 	
 	.fg-no-mobile{
-		display: none;
+		display: none !important;
 	}
 	
 	.fg-no-desktop{
-		display: block;
+		display: block !important;
 	}
 
 }
 
 
-/* phone landscape */
-@media screen and (max-width: 30em) and (orientation:landscape){
-
-	
-}
-
-/* ipad portrait */
-@media only screen and (max-device-width: 64em) and (orientation:portrait) {
-	
-}
-
-
-/* ipad landscape */
-@media only screen and (max-device-width: 64em) and (orientation:landscape) {
-	
-}
