@@ -1,0 +1,23 @@
+{
+  "name": "fitgrd",
+  "version": "0.0.1",
+  "homepage": "http://www.fitgrd.com/",
+  "authors": [
+    "Jan Müller"
+  ],
+  "description": "The lightweight & sexy looking responsive grid for your next awesome website. demo: http://www.fitgrd.com",
+  "main": "css/fitgrid.css",
+  "keywords": [
+    "css",
+    "grid",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
